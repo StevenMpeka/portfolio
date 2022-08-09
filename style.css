@@ -414,7 +414,8 @@ img{
 }
 
 .skills__container{
-    row-gap: 0;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skills__header{
@@ -449,14 +450,21 @@ img{
 }
 
 .skills__list{
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    width: 100%;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .skills__titles{
-    display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    transition: .3s;
 }
 
 .skills__name{
